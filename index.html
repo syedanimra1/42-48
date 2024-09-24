@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>43 to 48 Chapter</title>
+    <style>
+       .mblImg img {
+          width: 200px;
+          margin: 10px;
+          cursor: pointer;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #imageContainer {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #mainImage img {
+            width: 260px; /* Set your desired width */
+            transition: opacity 0.3s ease;
+        }
+
+        #counterValue {
+            font-size: 27px;
+            margin: 20px;
+
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+      </style>
+    </head>
+    <body>
+
+        <br><br><br>
+        <!-- Question No 1: -->
+        <blockquote> <blockquote><blockquote><a href="#" id="alertLink">Click me!</a>
+
+    <!-- Question No 2: -->
+   <center><h2>Mobile Images</h2></center>
+    </blockquote>
+<div class="mblImg">
+    <img src="images/phone-image-2.jpg" alt="Mobile 1" onclick="showAlert('Mobile 1 clicked!')" />
+    <img src="images/phone-image-3.jpg" alt="Mobile 2" onclick="showAlert('Mobile 2 clicked!')" />
+    <img src="images/phone-image-4.jpg" alt="Mobile 3" onclick="showAlert('Mobile 3 clicked!')" />
+</div>
+</blockquote>
+</blockquote>
+<!--Question No 3:-->
+<h1 style="text-align: center;">Student Records</h1>
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Grade</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Sadia</td>
+            <td>20</td>
+            <td>A</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Sarah</td>
+            <td>22</td>
+            <td>B</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Alisha</td>
+            <td>21</td>
+            <td>C</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Nimra</td>
+            <td>23</td>
+            <td>B</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Bushra</td>
+            <td>21</td>
+            <td>C</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Neha</td>
+            <td>20</td>
+            <td>A</td>
+            <td><button onclick="deleteRow(this)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<!--Question No 4:-->
+<div id="imageContainer">
+    <img id="mainImage" src="images/sun.webp" alt="Original Image" 
+         onmouseover="src='images/water.webp'" 
+         onmouseout="src='images/sun.webp'">
+</div>
+
+<!--Question No 5:-->
+<!-- <blockquote><blockquote> -->
+    <center>
+<h1>Simple Counter</h1>
+    <div id="counterValue">0</div>
+    <button id="increaseBtn">Increase</button>
+    <button id="decreaseBtn">Decrease</button>
+</center>
+<!-- </blockquote></blockquote> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
